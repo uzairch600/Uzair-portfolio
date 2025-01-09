@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Muhammad Uzair</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        navbar {
+    background-color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #495057;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff !important;
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    font-weight: bold;
+    color: #28a745 !important;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background-color: #fff;
+            border-top: 2px solid #007bff;
+        }
+
+        .contact-details {
+            margin-bottom: 40px;
+        }
+
+        .contact-details h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-details ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .contact-details ul li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-details a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-details i {
+            margin-right: 8px;
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form-container h4 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-form-container .form-label {
+            font-weight: bold;
+        }
+
+        .contact-form-container .form-control {
+            margin-bottom: 20px;
+        }
+
+        .contact-form-container .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form-container .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        footer i {
+            margin-right: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .contact-details h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-form-container {
+                padding: 20px;
+            }
+
+            .contact-form-container .btn-primary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">Muhammad Uzair</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <!-- Contact Details (Top Section) -->
+            <div class="contact-details">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li><i class="bi bi-envelope"></i><strong>Email:</strong> <a href="mailto:uzairchaudhary1616@gmail.com">uzairchaudhary1616@gmail.com</a></li>
+                    <li><i class="bi bi-telephone"></i><strong>Phone:</strong> <a href="tel:+103405000509">03405000509</a></li>
+                    <li><i class="bi bi-linkedin"></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn Profile</a></li>
+                    <li><i class="bi bi-github"></i><strong>GitHub:</strong> <a href="https://github.com/your-link" target="_blank">GitHub Profile</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h4>Contact Form</h4>
+                <form action="your-server-endpoint" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Muhammad Uzair. All Rights Reserved.</p>
+            <p>
+                <a href="https://github.com/uzairch600" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/muhammad-uzair-ab0a25324/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="https://www.upwork.com/freelancers/~016da5aaf30dfaca8d?mp_source=share" target="_blank"><i class="bi bi-upwork"></i> Upwork</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
